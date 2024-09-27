@@ -1,40 +1,35 @@
-#   a117_traversing_turtles.py
-#   Add code to make turtles move in a circle and change colors.
+
 import turtle as trtl
 
-# create an empty list of turtles
-my_turtles = []
+class Txrtle():
+  def __init__(self,shapes,colors,my_turtles,startx,starty, direction):
+    self.shapes = shapes
+    self.colors = colors
+    self.turtles = my_turtles
+    self.sx = startx
+    self.sy = starty
+    self.direction = direction
 
-# use interesting shapes and colors
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
-turtle_colors = ["red", "blue", "green", "orange", "purple", "gold"]
+  def setShapeColor(self):
+    for s in self.shapes:
+      t = trtl.Turtle(shape=s)
+      new_color = self.colors.pop()
+      t.color(new_color)
+      t.penup()
+      self.turtles.append(t)
 
-for s in turtle_shapes:
-  t = trtl.Turtle(shape=s)
-  new_color = turtle_colors.pop()
-  t.color(new_color)
-  t.penup()
-  my_turtles.append(t)
+  def move_turtle(self):
+    for t in self.turtles:
+      t.goto(self.sx, self.sy)
+      t.pendown()
+      t.setheading(self.direction)
+      t.right(45)     
+      t.forward(50)
 
-#  Setting the initilal position of the turtle
-startx = 0
-starty = 0
+      self.direction = t.heading()
 
-# iterating over each turtle and moving the turtle for each value in my_turtle
-direction = 90
+      self.sx = t.xcor()
+      self.sy = t.ycor()
 
-for t in my_turtles:
-  t.goto(startx, starty)
-  t.pendown()
-  t.setheading(direction)
-  t.right(45)     
-  t.forward(50)
-
-  direction = t.heading()
-
-#	Updating the starting x and y values
-  startx = t.xcor()
-  starty = t.ycor()
-
-wn = trtl.Screen()
-wn.mainloop()
+  def __str__(self):
+    return f"Turtle Shapes: {self.shapes}"

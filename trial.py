@@ -1,4 +1,4 @@
-from main import txrtl
+from main import Txrtle
 import turtle as trtl
 
 my_turtles = []
@@ -8,7 +8,9 @@ startx = 0
 starty = 0
 direction = 90
 
-bbg = txrtle(turtle_shapes,turtle_colors,my_turtles, startx, starty)
+bbg = Txrtle(turtle_shapes,turtle_colors,my_turtles, startx, starty, direction)
 bbg.setShapeColor()
 bbg.move_turtle()
-bbg.__str__()
+print(bbg.__str__())
+
+trtl.done()
