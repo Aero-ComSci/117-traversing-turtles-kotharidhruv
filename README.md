@@ -34,7 +34,7 @@ Step 18
 
 ```
 #### Description Of The App 
-
+This application essentially draws a design using different turtle objects. These objects possess different traits. More specifically, each object has a different shape and color. The program iterates through the two lists containing shapes and colors and assigns each turtle object a different shape and color.
 `
 # Include a video of the result of the code at speed 0 or Fast. Be sure to make it available for me to see.
 https://github.com/user-attachments/assets/a7c96488-d44e-4dcd-a341-a556be765917
