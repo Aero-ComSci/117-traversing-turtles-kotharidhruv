@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/K3waziIG)
 # Activity 1.1.7
 
 * Utilize this read me to showcase the project.
@@ -33,7 +34,8 @@ Step 18
 
 ```
 #### Description Of The App 
-
+This application essentially draws a design using different turtle objects. These objects possess different traits. More specifically, each object has a different shape and color. The program iterates through the two lists containing shapes and colors and assigns each turtle object a different shape and color.
 `
 # Include a video of the result of the code at speed 0 or Fast. Be sure to make it available for me to see.
+https://github.com/user-attachments/assets/a7c96488-d44e-4dcd-a341-a556be765917
 ## For Regrades use the Feedback and @baeztheprog on your commit messages.
